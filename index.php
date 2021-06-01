@@ -49,11 +49,11 @@
 
     
     .login-box input{
-    width: 350%;
+    width: 95%;
     margin-bottom: 20px;
     }
     
-    .login-box input[type="text"],input[type="email"],input[type="int"],input[type="date"]
+    .login-box input[type="text"],input[type="email"],input[type="number"],input[type="date"]
     {
     border: none;
     border-bottom: 1px solid #4caf50;
@@ -103,7 +103,7 @@
   
 
   <label >Age</label></br>
-  <input type="int" id="age" name="age" min="1" max="2"placeholder="Month" required><br>
+  <input type="number" id="age" name="age" placeholder="Month" required><br>
 
 
   <label  > Gender:</label><br>
@@ -129,11 +129,11 @@
 
   
   <label  >Used the screening app before</label><br>
-  <input type="boolean" id="before" name="before" placeholder=" YES OR NO" required><br>
+  <input type="text" id="checked" name="checked" placeholder=" YES OR NO" required><br>
 
   
   <label  >Screening Method Type </label><br>
-  <input type="int" id="type" name="type" required placeholder=" The type of screening methods chosen based on age category (0=toddler, 1=child, 2= adolescent, 3= adult)"><br>
+  <input type="number" id=" category" name=" category" required placeholder=" The type of screening methods chosen based on age category (0=toddler, 1=child, 2= adolescent, 3= adult)"><br>
 
 
   <input type="submit" value="Submit" >
