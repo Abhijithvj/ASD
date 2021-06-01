@@ -17,7 +17,7 @@
     body{
     margin: 0;
     padding: 0;
-    background: url(images/candle.jpg);
+    background: url(images/7.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,17 +28,11 @@
     }
    
       
-    .navbar {
-      overflow: hidden;
-      background-color: #ffff;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-          } 
+          
 
     .login-box{
     width: 50%;
-    height: 70%;
+    height: 95%;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10%;
     color: #fff;
@@ -55,17 +49,17 @@
 
     
     .login-box input{
-    width: 70%;
+    width: 350%;
     margin-bottom: 20px;
     }
     
-    .login-box input[type="text"],input[type="email"],input[type="number"],input[type="date"]
+    .login-box input[type="text"],input[type="email"],input[type="int"],input[type="date"]
     {
     border: none;
     border-bottom: 1px solid #4caf50;
     background:transparent;
     outline: none;
-    height:50%px;
+    height:50%;
     color: #fff;
     font-size: 20px;
     
@@ -100,37 +94,52 @@
 
 <body>    
     <div class="login-box"  >   <!-- new modified log in box -->
-        <h1>Admin Login</h1>
+        <h1>Details..</h1>
 
 
 
         <form  method="post" action="form.php">
-<label for="name">Enter your Name:</label><br>
-  <input type="text" id="name" name="name"placeholder="Name" ><br>
-
-  
-  <label for="email">Enter your email:</label><br>
-  <input type="email" id="email" name="email" placeholder="Email"> <br>
+          
   
 
-  <label >Enter your number:</lable></br>
-  <input type="number" id="quantity" name="quantity" min="1" max="10" ><br>
-  
-<lablel >Sex: </lable><br>
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Male</label>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Female</label>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Other</label><br>
+  <label >Age</label></br>
+  <input type="int" id="age" name="age" min="1" max="2"placeholder="Month" required><br>
 
-  <label for="birthday">Birthday:</label>
-<input type="date" id="birthday" name="birthday"><br>
+
+  <label  > Gender:</label><br>
+  <input type="text" id="gender" name="gender" placeholder="Male or Female"required ><br>
+  
+  <label  >   Ethnicity:</label><br>
+  <input type="text" id="ethnicit" name="ethnicity" placeholder="List of common ethnicities in text format " required><br>
+
+
+  <label  > Born with jaundice:</label><br>
+  <input type="text" id="jaundice" name="jaundice" placeholder="  YES OR NO"required><br>
+
+  <label  >Family member with PDD</label><br>
+  <input type="text" id="pdd" name="pddr" placeholder="  YES OR NO" required><br>
+
+  <label for="name" >Who is completing the test</label><br>
+  <input type="text" id="guardian" name="guardian" placeholder=" Parent, self, caregiver, medical staff, clinician ,etc." required><br>
+
+
+
+  <label  >Country of residence</label><br>
+  <input type="text" id="place" name="place" placeholder=" Name of the country" required><br>
+
+  
+  <label  >Used the screening app before</label><br>
+  <input type="boolean" id="before" name="before" placeholder=" YES OR NO" required><br>
+
+  
+  <label  >Screening Method Type </label><br>
+  <input type="int" id="type" name="type" required placeholder=" The type of screening methods chosen based on age category (0=toddler, 1=child, 2= adolescent, 3= adult)"><br>
 
 
   <input type="submit" value="Submit" >
 
 </form>
+</div>
 
 
         

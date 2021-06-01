@@ -3,7 +3,7 @@
 <head >
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login</title>
+    <title>FORM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../style.css">
@@ -15,147 +15,363 @@
 
     
     body{
+      
     margin:10;
     padding: 10;
-    background: url(images/candle.jpg);
+    background: url(images/6.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
     background-color:#1c8adb;
     font-family: serif;
-
-    }
+  }
    
-      
-    .navbar {
-      overflow: hidden;
-      background-color: #ffff;
-      position: fixed;
-      bottom: 0;
-      top :0; 
-      width: 100%;
-          } 
+  .container {
+    left: 5%;
+    top: 14%;
+    margin: 50px;
+    max-width: 95%;
+    padding: 30px;
+    background-color: transparent ;
 
-    
-.container {
-  position: absolute;
-  left: 0%;
-  top: 14%;
-  margin: 20px;
-  max-width: 300px;
-  padding: 16px;
-  background-color: transparent;
+  } 
+.sub{
+  left: 5%;
+  margin: 50px;
 }
-   
-    
   
-.heading{
-  position: absolute;
-  top: 0%;
-  max-height: 2%;
-  width: 100%;
-
-  padding: 50px;
-
-  background: url(images/bg.jpg);
+  .heading{
+    position: absolute;
+    top: 0%;
+    max-height: 2%;
+    width: 100%;
+    padding: 50px;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
-    background-color:#1c8adb;  
-}
+    background-color:#606060;  
+  }
     
 
-    .login-box input[type="submit"]
-    {
-    border: none;
-    outline: none;
-    height: 30px;
-    background: #1c8adb;
-    color: #fff;
-    font-size: 50x;
-    border-radius: 40px;
-    
-    
-    }
+
 
     img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }   
+
     h4 {text-align: center;}
+
+    p {  font-size: 40px;
+      color: white;}
+
+    h1 {text-align: center;}
+
+   
+
+    
+.transbox {
+  background-color:#595959;
+  border: 2px solid black;
+  opacity: 0.6;
+  
+}
+
+#navbar {
+  overflow: hidden;
+  background-color:#080808;  
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+
+
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
 
    </style>
     
-
-
-
 </head>
 
-<body>    
-    <table >
-      <thr >
-  <div class="heading">
-  <h4>Admin Login</h4>
+<body >    
+  <table >
+    <th>
+       <div id="navbar">
+       <a href="#default" style="color: white" id="logo">Autism Spectrum Disorder Diagnosis Tool</a>
+    </th>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "30px 10px";
+      document.getElementById("logo").style.fontSize = "25px";
+      } else {
+      document.getElementById("navbar").style.padding = "80px 10px";
+      document.getElementById("logo").style.fontSize = "35px";
+      }
+     }
+   </script>
 
-  </div>
+   =
+      <br><br><br><br><br><br><br><br><br><br>
+   
+      <h1><b><i><u>Fill the form</b></i></u></h1>
+   
+    <div class="container transbox ">   
+      <form  method="post" action="radio.php">
+      <p  ><b>1. Does your child look at you when you call his/her name? </b></p>
+
+      <h1>
+        0% &nbsp&nbsp<input type="radio" name="radio" value="1">&nbsp&nbsp
+        <input type="radio" name="RATE" value="2">&nbsp&nbsp
+        <input type="radio" name="RATE" value="3">&nbsp&nbsp 
+        <input type="radio" name="RATE" value="4">&nbsp&nbsp
+        <input type="radio" name="RATE" value="5">&nbsp&nbsp
+        <input type="radio" name="RATE" value="6">&nbsp&nbsp
+        <input type="radio" name="RATE" value="7">&nbsp&nbsp
+        <input type="radio" name="RATE" value="8">&nbsp&nbsp
+        <input type="radio" name="RATE" value="9">&nbsp&nbsp
+        <input type="radio" name="RATE" value="1o">&nbsp&nbsp 100%
+
+      </h1>
+      </form>
+    </div>
+
+    <div class="container transbox ">  
+      <form  method="post" action="form.php">
+        <p  ><b>2. How easy is it for you to get eye contact with your child? </b></p>
+
+        <h1>
+        0% &nbsp&nbsp<input type="radio" name="radio" value="1">&nbsp&nbsp
+        <input type="radio" name="RATE" value="2">&nbsp&nbsp
+        <input type="radio" name="RATE" value="3">&nbsp&nbsp 
+        <input type="radio" name="RATE" value="4">&nbsp&nbsp
+        <input type="radio" name="RATE" value="5">&nbsp&nbsp
+        <input type="radio" name="RATE" value="6">&nbsp&nbsp
+        <input type="radio" name="RATE" value="7">&nbsp&nbsp
+        <input type="radio" name="RATE" value="8">&nbsp&nbsp
+        <input type="radio" name="RATE" value="9">&nbsp&nbsp
+        <input type="radio" name="RATE" value="1o">&nbsp&nbsp 100%
+        </h1>
+        </form></div>
+  
+
+
+  
+    <div class="container transbox ">   
+      <form  method="post" action="form.php">
+        <p  ><b>3. Does your child point to indicate that s/he wants something?</b></p>
+
+        <h1>
+        0% &nbsp&nbsp<input type="radio" name="radio" value="1">&nbsp&nbsp
+        <input type="radio" name="RATE" value="2">&nbsp&nbsp
+        <input type="radio" name="RATE" value="3">&nbsp&nbsp 
+        <input type="radio" name="RATE" value="4">&nbsp&nbsp
+        <input type="radio" name="RATE" value="5">&nbsp&nbsp
+        <input type="radio" name="RATE" value="6">&nbsp&nbsp
+        <input type="radio" name="RATE" value="7">&nbsp&nbsp
+        <input type="radio" name="RATE" value="8">&nbsp&nbsp
+        <input type="radio" name="RATE" value="9">&nbsp&nbsp
+        <input type="radio" name="RATE" value="1o">&nbsp&nbsp 100%
+
+        </h1>
+      </form></div>
+
+    <div class="container transbox ">  
+      <form  method="post" action="form.php">
+         <p  ><b>4. Does your child point to share an interest with you? </b></p>
+
+        <h1>
+        0% &nbsp&nbsp<input type="radio" name="radio" value="1">&nbsp&nbsp
+        <input type="radio" name="RATE" value="2">&nbsp&nbsp
+        <input type="radio" name="RATE" value="3">&nbsp&nbsp 
+        <input type="radio" name="RATE" value="4">&nbsp&nbsp
+        <input type="radio" name="RATE" value="5">&nbsp&nbsp
+        <input type="radio" name="RATE" value="6">&nbsp&nbsp
+        <input type="radio" name="RATE" value="7">&nbsp&nbsp
+        <input type="radio" name="RATE" value="8">&nbsp&nbsp
+        <input type="radio" name="RATE" value="9">&nbsp&nbsp
+        <input type="radio" name="RATE" value="1o">&nbsp&nbsp 100%
+
+        </h1>
+        </form></div>
+
+    <div class="container transbox ">  
+      <form  method="post" action="form.php">
+        <p  ><b>5. Does your child pretend? e.g. care for dolls, talk on a toy phone?</b></p>
+
+        <h1>
+        0% &nbsp&nbsp<input type="radio" name="radio" value="1">&nbsp&nbsp
+        <input type="radio" name="RATE" value="2">&nbsp&nbsp
+        <input type="radio" name="RATE" value="3">&nbsp&nbsp 
+        <input type="radio" name="RATE" value="4">&nbsp&nbsp
+        <input type="radio" name="RATE" value="5">&nbsp&nbsp
+        <input type="radio" name="RATE" value="6">&nbsp&nbsp
+        <input type="radio" name="RATE" value="7">&nbsp&nbsp
+        <input type="radio" name="RATE" value="8">&nbsp&nbsp
+        <input type="radio" name="RATE" value="9">&nbsp&nbsp
+        <input type="radio" name="RATE" value="1o">&nbsp&nbsp 100%
+
+        </h1>
+     </form></div>
+
+
+    <div class="container transbox ">  
+      <form  method="post" action="form.php">
+        <p  ><b>6. Does your child follow where you are looking? </b></p>
+
+        <h1>
+        0% &nbsp&nbsp<input type="radio" name="radio" value="1">&nbsp&nbsp
+        <input type="radio" name="RATE" value="2">&nbsp&nbsp
+        <input type="radio" name="RATE" value="3">&nbsp&nbsp 
+        <input type="radio" name="RATE" value="4">&nbsp&nbsp
+        <input type="radio" name="RATE" value="5">&nbsp&nbsp
+        <input type="radio" name="RATE" value="6">&nbsp&nbsp
+        <input type="radio" name="RATE" value="7">&nbsp&nbsp
+        <input type="radio" name="RATE" value="8">&nbsp&nbsp
+        <input type="radio" name="RATE" value="9">&nbsp&nbsp
+        <input type="radio" name="RATE" value="1o">&nbsp&nbsp 100%
+
+        </h1>
+     </form>
+    </div>
+
+    <div class="container transbox ">  
+      <form  method="post" action="form.php">
+        <p  ><b>7. If you or someone else in the family is visibly upset, does your child show signs of wanting to comfort them? e.g. stroking hair, hugging them)</b></p>
+
+        <h1>
+        0% &nbsp&nbsp<input type="radio" name="radio" value="1">&nbsp&nbsp
+        <input type="radio" name="RATE" value="2">&nbsp&nbsp
+        <input type="radio" name="RATE" value="3">&nbsp&nbsp 
+        <input type="radio" name="RATE" value="4">&nbsp&nbsp
+        <input type="radio" name="RATE" value="5">&nbsp&nbsp
+        <input type="radio" name="RATE" value="6">&nbsp&nbsp
+        <input type="radio" name="RATE" value="7">&nbsp&nbsp
+        <input type="radio" name="RATE" value="8">&nbsp&nbsp
+        <input type="radio" name="RATE" value="9">&nbsp&nbsp
+        <input type="radio" name="RATE" value="1o">&nbsp&nbsp 100%
+
+        </h1>
+     </form></div>
+
+
+    <div class="container transbox ">  
+      <form  method="post" action="form.php">
+        <p  ><b>8. Does your child use simple gestures (e.g.wave goodbye)? </b></p>
+
+        <h1>
+        0% &nbsp&nbsp<input type="radio" name="radio" value="1">&nbsp&nbsp
+        <input type="radio" name="RATE" value="2">&nbsp&nbsp
+        <input type="radio" name="RATE" value="3">&nbsp&nbsp 
+        <input type="radio" name="RATE" value="4">&nbsp&nbsp
+        <input type="radio" name="RATE" value="5">&nbsp&nbsp
+        <input type="radio" name="RATE" value="6">&nbsp&nbsp
+        <input type="radio" name="RATE" value="7">&nbsp&nbsp
+        <input type="radio" name="RATE" value="8">&nbsp&nbsp
+        <input type="radio" name="RATE" value="9">&nbsp&nbsp
+        <input type="radio" name="RATE" value="1o">&nbsp&nbsp 100%
+        </h1>
+     </form></div>
+
+
+    <div class="container transbox ">  
+      <form  method="post" action="form.php">
+        <p  ><b>9. Does your child stare at nothing with no apparent purpose? </b></p>
+
+        <h1>
+        0% &nbsp&nbsp<input type="radio" name="radio" value="1">&nbsp&nbsp
+        <input type="radio" name="RATE" value="2">&nbsp&nbsp
+        <input type="radio" name="RATE" value="3">&nbsp&nbsp 
+        <input type="radio" name="RATE" value="4">&nbsp&nbsp
+        <input type="radio" name="RATE" value="5">&nbsp&nbsp
+        <input type="radio" name="RATE" value="6">&nbsp&nbsp
+        <input type="radio" name="RATE" value="7">&nbsp&nbsp
+        <input type="radio" name="RATE" value="8">&nbsp&nbsp
+        <input type="radio" name="RATE" value="9">&nbsp&nbsp
+        <input type="radio" name="RATE" value="1o">&nbsp&nbsp 100%
+
+        </h1>
+     </form></div>
+
+
+    <div class="container transbox ">  
+      <form  method="post" action="form.php">
+        <p  ><b>10. Does your child have unusual or sometimes intense reactions to way things smell, taste, seen, or look. </b></p>
+
+        <h1>
+        0% &nbsp&nbsp<input type="radio" name="radio" value="1">&nbsp&nbsp
+        <input type="radio" name="RATE" value="2">&nbsp&nbsp
+        <input type="radio" name="RATE" value="3">&nbsp&nbsp 
+        <input type="radio" name="RATE" value="4">&nbsp&nbsp
+        <input type="radio" name="RATE" value="5">&nbsp&nbsp
+        <input type="radio" name="RATE" value="6">&nbsp&nbsp
+        <input type="radio" name="RATE" value="7">&nbsp&nbsp
+        <input type="radio" name="RATE" value="8">&nbsp&nbsp
+        <input type="radio" name="RATE" value="9">&nbsp&nbsp
+        <input type="radio" name="RATE" value="1o">&nbsp&nbsp 100%
+        </h1>
+     </form></div>
+
+  
+ 
+
+  
+  <div class="sub"  >  
+    <form  method="post" action="form.php" >
+    <p align="right"> 
+    <input type="submit" value="Submit" >
+
+</p> 
+         
+    </form>
+
+    </div>
+
+  
+  
+
+  <tr>
+     <br><br><br>
   </tr>
-<tr>
-    <div class="container"  >   <!-- new modified log in box -->
-        <h4>Admin Login</h4>
 
 
 
-        <form  method="post" action="form.php">
-<label for="name">Enter your Name:</label><br>
-  <input type="text" id="name" name="name"placeholder="Name" ><br>
-
-  
-  <label for="email">Enter your email:</label><br>
-  <input type="email" id="email" name="email" placeholder="Email"> <br>
-  
-
-  <label >Enter your number:</lable></br>
-  <input type="number" id="quantity" name="quantity" min="1" max="10" ><br>
-  
-<lablel >Sex: </lable><br>
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Male</label>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Female</label>
-  <input type="radio" id="other" name="gender" value="other">
-  <label for="other">Other</label><br>
-
-  <label for="birthday">Birthday:</label>
-<input type="date" id="birthday" name="birthday"><br>
-
-
-  <input type="submit" value="Submit" >
-
-
-
-
-</form>
-
-  </tr> 
-        
-
-
-
+</table>
+  </div>
 
             
     <?php
-        if(isset($_POST['save']))
-       
+
+        include " init.php";
+        $rate =$_POST['rate'];
 
 
 
-
-
-
-        
             
     ?>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
